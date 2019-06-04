@@ -207,12 +207,13 @@
 body {
   position: relative;
   font-family: 'Open Sans', sans-serif;
-  background: #33aa99; }
+  background: #33aa99;
+  width: 100vw; }
   body header {
     position: absolute;
     top: 0;
     z-index: 2;
-    width: 100vw; }
+    width: 100%; }
     body header .ba-container {
       width: 1210px;
       margin: 0 auto;
@@ -279,236 +280,427 @@ body {
           body header .ba-container .social-icons a:hover {
             border: 2px solid #ffffff; }
   body main {
-    position: relative;
     width: 100vw;
-    margin: 0 auto; }
-    body main .slick-slider {
+    margin: 0 auto;
+    height: auto; }
+    body main .hero {
       width: 100%;
-      margin-bottom: 0 !important; }
-      body main .slick-slider .slide1 {
-        background: url("../img/Bg.jpg") center center no-repeat;
-        width: 100%;
-        height: 100vh;
-        -webkit-background-size: cover;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center; }
-        body main .slick-slider .slide1 .hero-text h1 {
-          margin: 0 0 40px;
-          font-family: 'gothambold1', sans-serif;
-          font-size: 80px;
-          letter-spacing: 0.05em;
-          color: #ffffff;
-          text-transform: uppercase; }
-        body main .slick-slider .slide1 .hero-text h2 {
-          font-family: 'gothambold1', sans-serif;
-          font-size: 18px;
-          letter-spacing: 0.3em;
-          color: #ffffff;
-          text-transform: uppercase;
-          font-weight: 300; }
-        body main .slick-slider .slide1 .scroll {
-          border: 1px solid #ffffff;
-          border-radius: 100%;
-          width: 40px;
-          height: 40px;
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          bottom: 50px; }
-          body main .slick-slider .slide1 .scroll a {
-            text-decoration: none;
-            color: #ffffff; }
-            body main .slick-slider .slide1 .scroll a i {
-              font-size: 14px; }
-      body main .slick-slider .slide2 {
-        background: #00b3ff;
+      overflow: hidden; }
+      body main .hero .slick-slider {
+        position: relative;
         width: 100vw;
-        height: 100vh;
-        -webkit-background-size: cover;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center; }
-        body main .slick-slider .slide2 .hero-text h1 {
-          margin: 0 0 40px;
-          font-family: 'gothambold1', sans-serif;
-          font-size: 80px;
-          letter-spacing: 0.05em;
-          color: #ffffff;
-          text-transform: uppercase; }
-        body main .slick-slider .slide2 .hero-text h2 {
-          font-family: 'gothambold1', sans-serif;
-          font-size: 18px;
-          letter-spacing: 0.3em;
-          color: #ffffff;
-          text-transform: uppercase;
-          font-weight: 300; }
-        body main .slick-slider .slide2 .scroll {
-          border: 1px solid #ffffff;
-          border-radius: 100%;
-          width: 40px;
-          height: 40px;
+        height: auto;
+        margin-bottom: 0 !important;
+        overflow: hidden !important; }
+        body main .hero .slick-slider .slide1 {
+          position: relative;
+          background: url("../img/Bg.jpg") center center no-repeat;
+          width: 100vw;
+          height: 100vh;
+          -webkit-background-size: cover;
+          background-size: cover;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           align-items: center;
-          position: absolute;
-          bottom: 50px; }
-          body main .slick-slider .slide2 .scroll a {
+          text-align: center; }
+          body main .hero .slick-slider .slide1 .hero-text h1 {
+            margin: 0 0 40px;
+            font-family: 'gothambold1', sans-serif;
+            font-size: 80px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-transform: uppercase; }
+          body main .hero .slick-slider .slide1 .hero-text h2 {
+            font-family: 'gothambold1', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 300; }
+          body main .hero .slick-slider .slide1 .scroll {
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            bottom: 50px;
             text-decoration: none;
-            color: #ffffff; }
-            body main .slick-slider .slide2 .scroll a i {
-              font-size: 14px; }
-      body main .slick-slider .slide3 {
-        background: #1883ba;
-        width: 100vw;
-        height: 100vh;
-        -webkit-background-size: cover;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center; }
-        body main .slick-slider .slide3 .hero-text h1 {
-          margin: 0 0 40px;
-          font-family: 'gothambold1', sans-serif;
-          font-size: 80px;
-          letter-spacing: 0.05em;
-          color: #ffffff;
-          text-transform: uppercase; }
-        body main .slick-slider .slide3 .hero-text h2 {
-          font-family: 'gothambold1', sans-serif;
-          font-size: 18px;
-          letter-spacing: 0.3em;
-          color: #ffffff;
-          text-transform: uppercase;
-          font-weight: 300; }
-        body main .slick-slider .slide3 .scroll {
-          border: 1px solid #ffffff;
-          border-radius: 100%;
-          width: 40px;
-          height: 40px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px; }
+        body main .hero .slick-slider .slide2 {
+          background: #00b3ff;
+          width: 100%;
+          height: 100vh;
+          -webkit-background-size: cover;
+          background-size: cover;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           align-items: center;
-          position: absolute;
-          bottom: 50px; }
-          body main .slick-slider .slide3 .scroll a {
+          text-align: center; }
+          body main .hero .slick-slider .slide2 .hero-text h1 {
+            margin: 0 0 40px;
+            font-family: 'gothambold1', sans-serif;
+            font-size: 80px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-transform: uppercase; }
+          body main .hero .slick-slider .slide2 .hero-text h2 {
+            font-family: 'gothambold1', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 300; }
+          body main .hero .slick-slider .slide2 .scroll {
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            bottom: 50px;
             text-decoration: none;
-            color: #ffffff; }
-            body main .slick-slider .slide3 .scroll a i {
-              font-size: 14px; }
-      body main .slick-slider .slide4 {
-        background: #3a768f;
-        width: 100vw;
-        height: 100vh;
-        -webkit-background-size: cover;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center; }
-        body main .slick-slider .slide4 .hero-text h1 {
-          margin: 0 0 40px;
-          font-family: 'gothambold1', sans-serif;
-          font-size: 80px;
-          letter-spacing: 0.05em;
-          color: #ffffff;
-          text-transform: uppercase; }
-        body main .slick-slider .slide4 .hero-text h2 {
-          font-family: 'gothambold1', sans-serif;
-          font-size: 18px;
-          letter-spacing: 0.3em;
-          color: #ffffff;
-          text-transform: uppercase;
-          font-weight: 300; }
-        body main .slick-slider .slide4 .scroll {
-          border: 1px solid #ffffff;
-          border-radius: 100%;
-          width: 40px;
-          height: 40px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px; }
+        body main .hero .slick-slider .slide3 {
+          background: #1883ba;
+          width: 100%;
+          height: 100vh;
+          -webkit-background-size: cover;
+          background-size: cover;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           align-items: center;
-          position: absolute;
-          bottom: 50px; }
-          body main .slick-slider .slide4 .scroll a {
+          text-align: center; }
+          body main .hero .slick-slider .slide3 .hero-text h1 {
+            margin: 0 0 40px;
+            font-family: 'gothambold1', sans-serif;
+            font-size: 80px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-transform: uppercase; }
+          body main .hero .slick-slider .slide3 .hero-text h2 {
+            font-family: 'gothambold1', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 300; }
+          body main .hero .slick-slider .slide3 .scroll {
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            bottom: 50px;
             text-decoration: none;
-            color: #ffffff; }
-            body main .slick-slider .slide4 .scroll a i {
-              font-size: 14px; }
-      body main .slick-slider .slide5 {
-        background: #33aa99;
-        width: 100vw;
-        height: 100vh;
-        -webkit-background-size: cover;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center; }
-        body main .slick-slider .slide5 .hero-text h1 {
-          margin: 0 0 40px;
-          font-family: 'gothambold1', sans-serif;
-          font-size: 80px;
-          letter-spacing: 0.05em;
-          color: #ffffff;
-          text-transform: uppercase; }
-        body main .slick-slider .slide5 .hero-text h2 {
-          font-family: 'gothambold1', sans-serif;
-          font-size: 18px;
-          letter-spacing: 0.3em;
-          color: #ffffff;
-          text-transform: uppercase;
-          font-weight: 300; }
-        body main .slick-slider .slide5 .scroll {
-          border: 1px solid #ffffff;
-          border-radius: 100%;
-          width: 40px;
-          height: 40px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px; }
+        body main .hero .slick-slider .slide4 {
+          background: #3a768f;
+          width: 100%;
+          height: 100vh;
+          -webkit-background-size: cover;
+          background-size: cover;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           align-items: center;
-          position: absolute;
-          bottom: 50px; }
-          body main .slick-slider .slide5 .scroll a {
+          text-align: center; }
+          body main .hero .slick-slider .slide4 .hero-text h1 {
+            margin: 0 0 40px;
+            font-family: 'gothambold1', sans-serif;
+            font-size: 80px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-transform: uppercase; }
+          body main .hero .slick-slider .slide4 .hero-text h2 {
+            font-family: 'gothambold1', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 300; }
+          body main .hero .slick-slider .slide4 .scroll {
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            bottom: 50px;
             text-decoration: none;
-            color: #ffffff; }
-            body main .slick-slider .slide5 .scroll a i {
-              font-size: 14px; }
-      body main .slick-slider .slick-dots {
-        position: absolute;
-        right: 0;
-        top: calc(50% - 107px);
+            color: #ffffff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px; }
+        body main .hero .slick-slider .slide5 {
+          background: #33aa99;
+          width: 100%;
+          height: 100vh;
+          -webkit-background-size: cover;
+          background-size: cover;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center; }
+          body main .hero .slick-slider .slide5 .hero-text h1 {
+            margin: 0 0 40px;
+            font-family: 'gothambold1', sans-serif;
+            font-size: 80px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-transform: uppercase; }
+          body main .hero .slick-slider .slide5 .hero-text h2 {
+            font-family: 'gothambold1', sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 300; }
+          body main .hero .slick-slider .slide5 .scroll {
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            bottom: 50px;
+            text-decoration: none;
+            color: #ffffff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px; }
+        body main .hero .slick-slider .slick-dots {
+          position: absolute;
+          right: 40px;
+          top: calc(50% - 107px);
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+          align-items: flex-end;
+          width: auto;
+          height: 215px; }
+          body main .hero .slick-slider .slick-dots li button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border: 1px solid #ffffff; }
+          body main .hero .slick-slider .slick-dots li.slick-active button:before {
+            color: transparent; }
+          body main .hero .slick-slider .slick-dots li.slick-active button {
+            background: #ffffff; }
+    body main .projects {
+      padding: 140px 0;
+      background: #ffffff;
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+      body main .projects .ba-container {
+        width: 1170px;
+        padding: 0; }
+        body main .projects .ba-container .projects-header {
+          font-family: 'gothambold1', sans-serif;
+          text-transform: uppercase;
+          font-size: 44px;
+          color: #2c4058;
+          text-align: center;
+          margin-bottom: 170px; }
+        body main .projects .ba-container .project-tradeCenter {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          height: auto;
+          margin-bottom: 210px; }
+          body main .projects .ba-container .project-tradeCenter .tradeCenter-imageBlock {
+            position: relative;
+            margin-right: 70px;
+            height: 470px; }
+            body main .projects .ba-container .project-tradeCenter .tradeCenter-imageBlock .tradeCenter-img {
+              position: absolute;
+              background: url("../img/trade-center.jpg") center center no-repeat;
+              -webkit-background-size: cover;
+              background-size: cover;
+              width: 630px;
+              height: 470px;
+              z-index: 2; }
+            body main .projects .ba-container .project-tradeCenter .tradeCenter-imageBlock .img-bg {
+              position: absolute;
+              width: 585px;
+              height: 470px;
+              background: #55b7ff;
+              top: -70px;
+              left: -260px; }
+          body main .projects .ba-container .project-tradeCenter .tradeCenter-description {
+            width: 42%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center; }
+            body main .projects .ba-container .project-tradeCenter .tradeCenter-description .subtitle {
+              font-family: 'GothamBook', sans-serif;
+              font-size: 22px;
+              color: #2c4058;
+              text-transform: uppercase;
+              margin: 0 0 15px 0; }
+            body main .projects .ba-container .project-tradeCenter .tradeCenter-description .title {
+              font-family: 'gothambold1', sans-serif;
+              font-size: 44px;
+              color: #2c4058;
+              text-transform: uppercase;
+              margin: 0 0 35px 0; }
+            body main .projects .ba-container .project-tradeCenter .tradeCenter-description .description {
+              margin: 0 0 35px 0;
+              font-size: 18px;
+              line-height: 30px;
+              color: #4b5562; }
+            body main .projects .ba-container .project-tradeCenter .tradeCenter-description .project-button {
+              display: block;
+              height: 50px;
+              width: 190px;
+              border: 1px solid #2c4058;
+              color: #2c4058;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-family: 'GothamBook', sans-serif;
+              font-size: 14px;
+              text-align: center;
+              line-height: 48px;
+              font-weight: 400;
+              margin-bottom: 55px; }
+              body main .projects .ba-container .project-tradeCenter .tradeCenter-description .project-button:hover {
+                background: #deecf5; }
+            body main .projects .ba-container .project-tradeCenter .tradeCenter-description .location {
+              font-size: 18px;
+              font-style: italic;
+              text-decoration: none;
+              color: #2c4058; }
+              body main .projects .ba-container .project-tradeCenter .tradeCenter-description .location:hover {
+                text-decoration: underline; }
+        body main .projects .ba-container .project-commerceCenter {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          height: 470px; }
+          body main .projects .ba-container .project-commerceCenter .commerceCenter-description {
+            width: 46%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            margin-right: 70px; }
+            body main .projects .ba-container .project-commerceCenter .commerceCenter-description .subtitle {
+              font-family: 'GothamBook', sans-serif;
+              font-size: 22px;
+              color: #2c4058;
+              text-transform: uppercase;
+              margin: 0 0 15px 0; }
+            body main .projects .ba-container .project-commerceCenter .commerceCenter-description .title {
+              font-family: 'gothambold1', sans-serif;
+              font-size: 44px;
+              color: #2c4058;
+              text-transform: uppercase;
+              margin: 0 0 35px 0; }
+            body main .projects .ba-container .project-commerceCenter .commerceCenter-description .description {
+              margin: 0 0 35px 0;
+              font-size: 18px;
+              line-height: 30px;
+              color: #4b5562; }
+            body main .projects .ba-container .project-commerceCenter .commerceCenter-description .project-button {
+              display: block;
+              height: 50px;
+              width: 190px;
+              border: 1px solid #2c4058;
+              color: #2c4058;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-family: 'GothamBook', sans-serif;
+              font-size: 14px;
+              text-align: center;
+              line-height: 48px;
+              font-weight: 400;
+              margin-bottom: 55px; }
+              body main .projects .ba-container .project-commerceCenter .commerceCenter-description .project-button:hover {
+                background: #deecf5; }
+            body main .projects .ba-container .project-commerceCenter .commerceCenter-description .location {
+              font-size: 18px;
+              font-style: italic;
+              text-decoration: none;
+              color: #2c4058; }
+              body main .projects .ba-container .project-commerceCenter .commerceCenter-description .location:hover {
+                text-decoration: underline; }
+          body main .projects .ba-container .project-commerceCenter .commerceCenter-imageBlock {
+            position: relative;
+            height: 100%;
+            width: 54%; }
+            body main .projects .ba-container .project-commerceCenter .commerceCenter-imageBlock .commerceCenter-img {
+              position: absolute;
+              background: url("../img/commerce-center.jpg") center center no-repeat;
+              -webkit-background-size: cover;
+              background-size: cover;
+              width: 630px;
+              height: 470px;
+              z-index: 2; }
+            body main .projects .ba-container .project-commerceCenter .commerceCenter-imageBlock .img-bg {
+              position: absolute;
+              height: 470px;
+              width: 585px;
+              background: #7e5aff;
+              top: -70px;
+              right: 0;
+              left: 260px;
+              overflow: hidden; }
+    body main .news {
+      padding: 180px 0 140px;
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+      background: #3c81d5;
+      background: -moz-linear-gradient(45deg, #3c81d5 0%, #24ccfa 64%, #24ccfa 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, #3c81d5), color-stop(64%, #24ccfa), color-stop(100%, #24ccfa));
+      background: -webkit-linear-gradient(45deg, #3c81d5 0%, #24ccfa 64%, #24ccfa 100%);
+      background: -o-linear-gradient(45deg, #3c81d5 0%, #24ccfa 64%, #24ccfa 100%);
+      background: -ms-linear-gradient(45deg, #3c81d5 0%, #24ccfa 64%, #24ccfa 100%);
+      background: url("../img/news.png") bottom center no-repeat, linear-gradient(45deg, #3c81d5 0%, #24ccfa 64%, #24ccfa 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c81d5', endColorstr='#24ccfa', GradientType=1); }
+      body main .news .ba-container {
+        width: 1170px;
+        padding: 0;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        width: 12px;
-        height: 215px;
-        margin-right: 40px; }
-        body main .slick-slider .slick-dots li button {
-          width: 10px;
-          height: 10px;
-          border-radius: 100%;
-          border: 1px solid #ffffff; }
-        body main .slick-slider .slick-dots li.slick-active button:before {
-          color: transparent; }
-        body main .slick-slider .slick-dots li.slick-active button {
-          background: #ffffff; }
+        justify-content: center;
+        align-items: center; }
+        body main .news .ba-container .newsTitle {
+          position: relative;
+          font-family: 'gotham_mediumregular', sans-serif;
+          font-size: 44px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-weight: 300; }
+          body main .news .ba-container .newsTitle:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background: #ffffff;
+            top: -40px;
+            left: 0;
+            right: 0;
+            margin: auto; }
 
 /*# sourceMappingURL=styles.css.map */
