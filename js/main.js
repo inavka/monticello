@@ -3,7 +3,9 @@ $(document).ready(function(){
         dots: true,
         arrows: false,
         vertical: true,
-        verticalSwiping: true
+        verticalSwiping: true,
+        autoPlay: true,
+        autoplaySpeed: 1000,
     });
 
     $('.sliderNews').slick({
@@ -11,8 +13,12 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoPlay: true,
-        autoplaySpeed: 4000,
-        dots: true
+        autoplaySpeed: 1000,
+        dots: true,
+        variableWidth: true,
+        arrow: true,
     });
 });
+
+
 
