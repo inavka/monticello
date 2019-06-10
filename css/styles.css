@@ -283,11 +283,11 @@ body {
     margin: 0 auto;
     height: auto; }
     body main .hero {
-      width: 100%;
+      width: 100vw;
       overflow: hidden; }
       body main .hero .slick-slider {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: auto;
         margin-bottom: 0 !important;
         overflow: hidden !important; }
@@ -295,6 +295,14 @@ body {
           background: url("../img/Bg.jpg") center center no-repeat;
           -webkit-background-size: cover;
           background-size: cover; }
+        body main .hero .slick-slider .slide2 {
+          background: #00b3ff; }
+        body main .hero .slick-slider .slide3 {
+          background: #1883ba; }
+        body main .hero .slick-slider .slide4 {
+          background: #3c81d5; }
+        body main .hero .slick-slider .slide5 {
+          background: #55b7ff; }
         body main .hero .slick-slider .slick-slide {
           position: relative;
           width: 100vw;
@@ -351,7 +359,7 @@ body {
     body main .projects {
       padding: 140px 0;
       background: #ffffff;
-      width: 100%;
+      width: 100vw;
       height: auto;
       overflow: hidden; }
       body main .projects .ba-container {
@@ -551,15 +559,19 @@ body {
           height: 515px;
           width: 100%;
           position: relative; }
-          body main .news .ba-container .sliderNews .slick-dots li {
-            margin: 0 20px; }
-            body main .news .ba-container .sliderNews .slick-dots li button {
-              width: 10px;
-              height: 10px;
-              border-radius: 100%;
-              border: 1px solid #ffffff; }
-          body main .news .ba-container .sliderNews .slick-dots li.slick-active button {
-            background: #ffffff; }
+          body main .news .ba-container .sliderNews .slick-arrow {
+            margin: 0 -40px; }
+          body main .news .ba-container .sliderNews .slick-dots {
+            margin-bottom: -60px; }
+            body main .news .ba-container .sliderNews .slick-dots li {
+              margin: 0 20px; }
+              body main .news .ba-container .sliderNews .slick-dots li button {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                border: 1px solid #ffffff; }
+            body main .news .ba-container .sliderNews .slick-dots li.slick-active button {
+              background: #ffffff; }
           body main .news .ba-container .sliderNews .slick-slide {
             width: 370px;
             background: #ffffff;
@@ -834,5 +846,47 @@ body {
     width: 100%;
     padding-top: 200px;
     margin-top: -10px; }
+    body .ba-footer .ba-container {
+      width: 770px; }
+      body .ba-footer .ba-container .flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px; }
+        body .ba-footer .ba-container .flex-container .logo img {
+          width: 241px;
+          height: 54px; }
+        body .ba-footer .ba-container .flex-container .social-icons {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 16px; }
+          body .ba-footer .ba-container .flex-container .social-icons a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            text-align: center;
+            line-height: 38px;
+            margin-right: 30px; }
+            body .ba-footer .ba-container .flex-container .social-icons a:last-child {
+              margin-right: 0; }
+            body .ba-footer .ba-container .flex-container .social-icons a:hover {
+              border: 2px solid #ffffff; }
+      body .ba-footer .ba-container .text-block {
+        font-family: 'GothamBook', sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        padding-bottom: 210px; }
+        body .ba-footer .ba-container .text-block .copyright:after {
+          content: "|";
+          font-size: 14px;
+          color: #ffffff;
+          padding: 0 23px; }
 
 /*# sourceMappingURL=styles.css.map */

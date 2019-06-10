@@ -122,12 +122,12 @@ body {
     height: auto;
 
     .hero {
-      width: 100%;
+      width: 100vw;
       overflow: hidden;
 
       .slick-slider {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: auto;
         margin-bottom: 0 !important;
         overflow: hidden !important;
@@ -136,6 +136,22 @@ body {
           background: url("../img/Bg.jpg") center center no-repeat;
           -webkit-background-size: cover;
           background-size: cover;
+        }
+        
+        .slide2 {
+          background: #00b3ff;
+        }
+        
+        .slide3 {
+          background: #1883ba;
+        }
+
+        .slide4 {
+          background: #3c81d5;
+        }
+
+        .slide5 {
+          background: #55b7ff;
         }
 
         .slick-slide {
@@ -221,7 +237,7 @@ body {
     .projects {
       padding: 140px 0;
       background: #ffffff;
-      width: 100%;
+      width: 100vw;
       height: auto;
       overflow: hidden;
 
@@ -485,7 +501,13 @@ body {
           width: 100%;
           position: relative;
 
+          .slick-arrow {
+            margin: 0 -40px;
+          }
+
           .slick-dots {
+
+            margin-bottom: -60px;
 
             li {
               margin: 0 20px;
@@ -905,5 +927,71 @@ body {
     width: 100%;
     padding-top: 200px;
     margin-top: -10px;
+
+    .ba-container {
+      width: 770px;
+
+      .flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .logo {
+
+          img {
+            width: 241px;
+            height: 54px;
+          }
+        }
+
+        .social-icons {
+
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 16px;
+
+          a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            text-align: center;
+            line-height: 38px;
+            margin-right: 30px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &:hover {
+              border: 2px solid #ffffff;
+            }
+          }
+        }
+      }
+      .text-block {
+        font-family: 'GothamBook', sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        padding-bottom: 210px;
+
+        .copyright {
+
+          &:after {
+            content: "|";
+            font-size: 14px;
+            color: #ffffff;
+            padding: 0 23px;
+          }
+        }
+      }
+    }
   }
 }
